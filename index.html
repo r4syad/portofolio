@@ -535,14 +535,69 @@
             </div>
             
         <!-- Blog Stop -->
-         
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white py-8">
+    <div class="container mx-auto px-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Kolom 1: Peta Google Maps -->
+            <div class="relative w-full h-80 sm:h-96 md:h-[400px] overflow-hidden rounded-lg shadow-lg transition-transform duration-300 transform hover:scale-105 mx-auto mt-4">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254874.5850136803!2d114.45760502764365!3d-3.3172181265400236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de4209aa1eec961%3A0x26030bfcc09204d2!2sBanjarmasin%2C%20Kota%20Banjarmasin%2C%20Kalimantan%20Selatan!5e0!3m2!1sen!2sid!4v1692730659725!5m2!1sen!2sid&z=15"
+                    class="absolute inset-0 w-full h-full border-0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+                <div class="mt-6 text-center">
+                    <a href="https://www.google.com/maps?q=Banjarmasin,+Kalimantan+Selatan&ll=-3.317722939165069,114.590780&z=15" 
+                       target="_blank" 
+                       class="text-blue-400 hover:text-blue-600 underline text-lg font-medium">
+                        Lihat Lokasi Banjarmasin di Google Maps
+                    </a>
+                </div>
+            </div>
+
+            <!-- Kolom 2: Informasi Tambahan -->
+            <div class="text-center md:text-left">
+                <h3 class="text-xl font-bold mb-4">Kontak Kami</h3>
+                <p class="mb-2">Email: info@example.com</p>
+                <p class="mb-2">Telepon: (123) 456-7890</p>
+                <p class="mb-4">Alamat: Jl. Contoh No. 123, Banjarmasin, Kalimantan Selatan</p>
+                <h3 class="text-xl font-bold mb-4">Ikuti Kami</h3>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="#" class="text-blue-400 hover:text-blue-600" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i> <!-- Gunakan ikon Font Awesome atau sesuai -->
+                    </a>
+                    <a href="#" class="text-blue-400 hover:text-blue-600" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-blue-400 hover:text-blue-600" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Copyright -->
+        <div class="mt-6 text-center text-sm text-gray-400">
+            <p>&copy; 2024 Muhammad Rasayad. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+          
         <!-- Tombol Mengambang untuk Memutar Musik -->
     <button id="playButton" class="floating-button rounded-full">
         <i id="playIcon" class="fas fa-play icon"></i>
     </button>
     <audio id="audioPlayer" src="music/Something just like this.mp3"></audio>
     <!-- EndPlay -->
-
+   
     <!-- Include Font Awesome -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-PkKzT1fFZmA4Fn1kOYY2+cM2I+kL6D6vOkI+6U8/2/8v+F2nTGpM5r2K5XbL8Fz04zH/GW4zDd8y8J5s3yRGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
