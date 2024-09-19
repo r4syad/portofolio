@@ -1,11 +1,549 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Rasyad</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="src/output.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.2.6/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <h1>Hallo Myname is Rasyad</h1>
+
+    <!-- Header Start -->
+<header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+    <div class="container mx-auto py-4">
+        <div class="flex items-center justify-between relative px-4"> <!-- Tambahkan px-4 di sini -->
+            <!-- Logo -->
+            <div class="py-4">
+                <a href="#home" class="font-bold text-lg text-slate-800 block">
+                    @mhmmd.rsyd__
+                </a>
+            </div>
+
+            <!-- Hamburger Menu -->
+            <div class="flex items-center">
+                <button id="hamburger" name="hamburger" type="button" class="block relative right-0 lg:hidden">
+                    <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                    <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                    <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                </button>
+
+                <nav id="nav-menu" class="hidden absolute py-5 bg-white shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none">
+                    <ul class="block lg:flex">
+                        <li class="group">
+                            <a href="#home" class="text-base text-dark py-2 mx-8
+                            group-hover:text-primary flex">Home</a>
+                        </li>
+                        <li class="group">
+                            <a href="#about" class="text-base text-dark py-2 mx-8
+                            group-hover:text-primary flex">About</a>
+                        </li>
+                        <li class="group">
+                            <a href="#portfolio" class="text-base text-dark py-2 mx-8
+                            group-hover:text-primary flex">Portfolio</a>
+                        </li>
+                        <li class="group">
+                            <a href="#framework" class="text-base text-dark py-2 mx-8
+                            group-hover:text-primary flex">Framework</a>
+                        </li>
+                        <li class="group">
+                            <a href="#kontak" class="text-base text-dark py-2 mx-8
+                            group-hover:text-primary flex">Kontak</a>
+                        </li>
+                        <li class="group">
+                            <a href="#blog" class="text-base text-dark py-2 mx-8
+                            group-hover:text-primary flex">Blog</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header Stop -->
+
+
+    <!-- Hero section  start-->
+     <section id="home" class="pt-36">
+        <div class="container">
+            <div class="flex flex-wrap ">
+                <div class="w-full self-center px-4 lg:w-1/2">
+                    <h1 class="text-base font-semibold text-sky-700 md:text-xl lg:text-2xl">Hallo😇<span class="block font-bold text-dark text-2xl mt-1 lg:text-5xl">Muhammad Rasyad 💻</span></h1>
+                    <h2 class="font-medium text-slate-500 text-l mb-2">| Web Developer | Cyber Security |</h2>
+                    <p class="font-medium text-slate-400 mb-10 leading-relaxed ">"Behind every successful program is a frustrated programmer who never gave up."</p>
+                    <a href="#" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-lg hover:bg-green-500 transition duration-300 ease-in-out">Contact us</a>
+                </div>
+                <div class="w-full self-end px-4 lg:w-1/2">
+                    <div class="relative mt-10 left-1/2 -translate-x-1/2 lg:w-1/2 lg:mt-9 lg:right-0 ">
+                        <img src="img/me.png" class="max-w-full mx-auto ">
+                        <span class="absolute bottom-0 -z-10 mg:scale-125" >
+                            <img src="img/4380747.jpg" width="300px" height="300">
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Hero section  end-->
+
+    <!-- About section Start -->
+     <section id="about" class="pt-36 pb-32">
+        <div class="container">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-10 lg:w-1/2">
+                    <h4 class="font-bold uppercase text-primary text-lg mb-3">Tentang Saya</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-5 max-w-xl lg:text-4xl">Siapakah , saya?</h2>
+                    <p class="font-medium text-base text-second ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia libero non quod, aperiam nisi laboriosam? Cupiditate?</p>
+                </div>
+                <div class="w-full px-4 lg:w-1/2">
+                    <h3 class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10">Ayok, Berteman!🙌</h3>
+                    <p class="font-medium text-base text-second mb-6 lg:text-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius consequatur voluptates soluta nisi, officiis praesentium beatae.</p>
+                </div>
+                <div class="flex items-center px-4">
+                    <!-- Youtube -->
+                    <a href="http://youtube.com" target="_blank" rel="youtube" class="w-9 h-9 mr-3 rounded-full flex 
+                    justify-center items-center border border-slate-300 text-slate-300 hover:border-sky-700 hover:bg-sky-600 hover:text-red-500">
+                    <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <title>YouTube</title>
+                        <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+
+                    </a>
+                    <!-- Instagram -->
+                     <a href="https://www.instagram.com/mhmmd.rsyd__/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex 
+                     justify-center items-center border border-slate-300 text-slate-300 hover:border-sky-700 hover:bg-sky-600 hover:text-red-500">
+
+                    <svg role="img" width="20px" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <title>Instagram</title>
+                        <path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg>
+                     </a>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- About section Stop -->
+     
+<!-- Portofolio Start -->
+<section id="portofolio" class="pt-36 pb-16 bg-slate-300">
+    <div class="container">
+        <div class="w-full px-4">
+            <!-- Heading Section -->
+            <div class="max-w-xl mx-auto text-center mb-16">
+                <h4 class="font-semibold text-lg text-primary mb-2">Portofolio</h4>
+                <h2 class="font-bold text-dark text-3xl mb-4">Project Terbaru</h2>
+                <p class="font-medium text-md text-second">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum cum, a blanditiis architecto voluptatum omnis labore quas fugiat hic deserunt!
+                </p>
+            </div>
+        </div>
+
+        <!-- Portfolio Items -->
+        <div class="w-full px-4 flex flex-wrap justify-center">
+            <!-- Portfolio Item 1 -->
+            <div class="mb-12 p-4 w-full md:w-1/2 lg:w-1/2">
+                <div class="bg-white rounded-md shadow-md overflow-hidden">
+                    <img src="img/project/1.png" alt="ctf" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-xl text-dark mt-4 mb-2">
+                            "Cybersecurity Mastery: Exploring Challenges in PicoCTF"
+                        </h3>
+                        <p class="font-medium text-base text-second">
+                            Proyek ini mengeksplorasi berbagai tantangan keamanan siber di PicoCTF, bertujuan untuk meningkatkan pemahaman tentang teknik hacking, cryptography, eksploitasi, dan forensik digital.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 2 -->
+            <div class="mb-12 p-4 w-full md:w-1/2 lg:w-1/2">
+                <div class="bg-white rounded-md shadow-md overflow-hidden">
+                    <img src="img/project/2.png" alt="ctf" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-xl text-dark mt-4 mb-2">
+                            "Hack The Box: Mastering Real-World Penetration Testing"
+                        </h3>
+                        <p class="font-medium text-base text-second">
+                            Menyelami tantangan Hack The Box untuk mengasah keterampilan penetrasi dan eksploitasi keamanan siber, dengan fokus pada teknik praktis dan solusi dunia nyata dalam keamanan TI.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 3 -->
+            <div class="mb-12 p-4 w-full md:w-1/2 lg:w-1/2">
+                <div class="bg-white rounded-md shadow-md overflow-hidden">
+                    <img src="img/project/3.png" alt="ctf" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-xl text-dark mt-4 mb-2">
+                            "Sistem Jadwal Ruangan V1: Solusi Manajemen Jadwal yang Efisien"
+                        </h3>
+                        <p class="font-medium text-base text-second">
+                            Mengembangkan sistem jadwal ruangan untuk mengelola dan mengoptimalkan pemakaian ruangan secara efektif, mempermudah penjadwalan, dan mengurangi konflik jadwal dengan antarmuka pengguna yang intuitif.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 4 -->
+            <div class="mb-12 p-4 w-full md:w-1/2 lg:w-1/2">
+                <div class="bg-white rounded-md shadow-md overflow-hidden">
+                    <img src="img/project/4.png" alt="ctf" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-xl text-dark mt-4 mb-2">
+                            "Sistem Jadwal Ruangan V2: Optimalisasi dan Integrasi Cerdas"
+                        </h3>
+                        <p class="font-medium text-base text-second">
+                            Versi terbaru dari sistem jadwal ruangan yang menghadirkan fitur canggih untuk penjadwalan otomatis, integrasi kalender, dan analitik pemakaian. Meningkatkan efisiensi pengelolaan ruangan dengan antarmuka yang lebih responsif dan fitur kustomisasi yang lebih baik.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 5 -->
+            <div class="mb-12 p-4 w-full md:w-1/2 lg:w-1/2">
+                <div class="bg-white rounded-md shadow-md overflow-hidden">
+                    <img src="img/project/5.png" alt="ctf" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-xl text-dark mt-4 mb-2">
+                            "Exploring Laravel: Building Dynamic Web Applications"
+                        </h3>
+                        <p class="font-medium text-base text-second">
+                            Proyek pembelajaran Laravel ini mencakup pembuatan aplikasi web dinamis dengan fitur CRUD, autentikasi, dan pengelolaan data untuk memahami framework PHP secara mendalam.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Portfolio Item 6 -->
+            <div class="mb-12 p-4 w-full md:w-1/2 lg:w-1/2">
+                <div class="bg-white rounded-md shadow-md overflow-hidden">
+                    <img src="img/project/6.png" alt="ctf" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-semibold text-xl text-dark mt-4 mb-2">
+                            "Mastering Tailwind CSS: Crafting Modern User Interfaces"
+                        </h3>
+                        <p class="font-medium text-base text-second">
+                            Proyek ini fokus pada penerapan Tailwind CSS untuk merancang antarmuka pengguna modern, responsif, dan estetik dengan menggunakan utility-first styling dan komponen siap pakai.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Portofolio End -->
+
+<!-- framework -->
+<section id="framework" class="pt-36 pb-32 bg-sky-950">
+    <div class="container mx-auto">
+        <div class="w-full px-4">
+            <div class="max-w-xl mx-auto text-center mb-16">
+                <h4 class="font-semibold text-lg text-primary mb-2">Library dan Framework</h4>
+                <h2 class="font-bold text-white text-3xl mb-4">Library dan Framework yang Digunakan</h2>
+                <p class="font-medium text-md text-gray-300">
+                    Berikut adalah beberapa library dan framework yang digunakan dalam proyek kami.
+                </p>
+            </div>
+        </div>
+
+        <!-- Marquee Baris Pertama (Libraries) -->
+        <div class="marquee-container overflow-hidden w-full mt-10">
+            <div class="marquee flex animate-marquee-left">
+                <!-- Card for React.js -->
+                <div class="marquee-item hover:scale-105 transition duration-300">
+                    <div class="card flex gap-3 px-7 py-6 bg-gradient-to-r from-blue-200 to-indigo-200 rounded-2xl shadow-md border border-white cursor-pointer hover:shadow-xl mr-8 items-center">
+                        <img src="https://img.icons8.com/office/64/react.png" alt="React.js">
+                        <div class="space-y-0.5">
+                            <h4 class="font-bold text-xl text-secondary">React.js</h4>
+                            <p class="text-xs text-[#7E7E7E]">React adalah library JavaScript untuk membangun user interface dinamis...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card for Vue.js -->
+                <div class="marquee-item hover:scale-105 transition duration-300">
+                    <div class="card flex gap-3 px-7 py-6 bg-gradient-to-r from-green-200 to-teal-200 rounded-2xl shadow-md border border-white cursor-pointer hover:shadow-xl mr-8 items-center">
+                        <img src="https://img.icons8.com/color/64/vue-js.png" alt="Vue.js">
+                        <div class="space-y-0.5">
+                            <h4 class="font-bold text-xl text-secondary">Vue.js</h4>
+                            <p class="text-xs text-[#7E7E7E]">Vue adalah library progresif untuk membangun antarmuka pengguna...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card for Angular -->
+                <div class="marquee-item hover:scale-105 transition duration-300">
+                    <div class="card flex gap-3 px-7 py-6 bg-gradient-to-r from-red-200 to-pink-200 rounded-2xl shadow-md border border-white cursor-pointer hover:shadow-xl mr-8 items-center">
+                        <img src="https://img.icons8.com/color/64/angularjs.png" alt="Angular">
+                        <div class="space-y-0.5">
+                            <h4 class="font-bold text-xl text-secondary">Angular</h4>
+                            <p class="text-xs text-[#7E7E7E]">Angular adalah framework JavaScript untuk membangun aplikasi web dinamis...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card for jQuery -->
+                <div class="marquee-item hover:scale-105 transition duration-300">
+                    <div class="card flex gap-3 px-7 py-6 bg-gradient-to-r from-blue-100 to-purple-100 rounded-2xl shadow-md border border-white cursor-pointer hover:shadow-xl mr-8 items-center">
+                        <img src="https://img.icons8.com/ios-filled/50/jquery.png" alt="jQuery">
+                        <div class="space-y-0.5">
+                            <h4 class="font-bold text-xl text-secondary">jQuery</h4>
+                            <p class="text-xs text-[#7E7E7E]">jQuery adalah library JavaScript cepat dan kecil...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card for Bootstrap -->
+                <div class="marquee-item hover:scale-105 transition duration-300">
+                    <div class="card flex gap-3 px-7 py-6 bg-gradient-to-r from-purple-200 to-indigo-200 rounded-2xl shadow-md border border-white cursor-pointer hover:shadow-xl mr-8 items-center">
+                        <img src="https://img.icons8.com/color/64/bootstrap.png" alt="Bootstrap">
+                        <div class="space-y-0.5">
+                            <h4 class="font-bold text-xl text-secondary">Bootstrap</h4>
+                            <p class="text-xs text-[#7E7E7E]">Bootstrap adalah framework CSS open-source untuk pengembangan responsif...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card for Tailwind CSS -->
+                <div class="marquee-item hover:scale-105 transition duration-300">
+                    <div class="card flex gap-3 px-7 py-6 bg-gradient-to-r from-green-200 to-cyan-200 rounded-2xl shadow-md border border-white cursor-pointer hover:shadow-xl mr-8 items-center">
+                        <img src="https://img.icons8.com/color/64/tailwind-css.png" alt="Tailwind CSS">
+                        <div class="space-y-0.5">
+                            <h4 class="font-bold text-xl text-secondary">Tailwind CSS</h4>
+                            <p class="text-xs text-[#7E7E7E]">Tailwind CSS adalah framework CSS utilitas...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card for Sass -->
+                <div class="marquee-item hover:scale-105 transition duration-300">
+                    <div class="card flex gap-3 px-7 py-6 bg-gradient-to-r from-pink-200 to-rose-200 rounded-2xl shadow-md border border-white cursor-pointer hover:shadow-xl mr-8 items-center">
+                        <img src="https://img.icons8.com/color/64/sass.png" alt="Sass">
+                        <div class="space-y-0.5">
+                            <h4 class="font-bold text-xl text-secondary">Sass</h4>
+                            <p class="text-xs text-[#7E7E7E]">Sass adalah preprocessor CSS yang mempermudah pengelolaan stylesheet...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card for D3.js -->
+                <div class="marquee-item hover:scale-105 transition duration-300">
+                    <div class="card flex gap-3 px-7 py-6 bg-gradient-to-r from-yellow-200 to-orange-200 rounded-2xl shadow-md border border-white cursor-pointer hover:shadow-xl mr-8 items-center">
+                        <img src="https://img.icons8.com/external-tal-revivo-filled-tal-revivo/64/d3-js.png" alt="D3.js">
+                        <div class="space-y-0.5">
+                            <h4 class="font-bold text-xl text-secondary">D3.js</h4>
+                            <p class="text-xs text-[#7E7E7E]">D3.js adalah library JavaScript untuk membuat visualisasi data interaktif...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card for Lodash -->
+                <div class="marquee-item hover:scale-105 transition duration-300">
+                    <div class="card flex gap-3 px-7 py-6 bg-gradient-to-r from-gray-200 to-cool-gray-200 rounded-2xl shadow-md border border-white cursor-pointer hover:shadow-xl mr-8 items-center">
+                        <img src="https://img.icons8.com/ios-filled/64/javascript-logo.png" alt="Lodash">
+                        <div class="space-y-0.5">
+                            <h4 class="font-bold text-xl text-secondary">Lodash</h4>
+                            <p class="text-xs text-[#7E7E7E]">Lodash adalah library JavaScript yang menyediakan utilitas untuk manipulasi data...</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card for Chart.js -->
+                <div class="marquee-item hover:scale-105 transition duration-300">
+                    <div class="card flex gap-3 px-7 py-6 bg-gradient-to-r from-pink-200 to-rose-200 rounded-2xl shadow-md border border-white cursor-pointer hover:shadow-xl mr-8 items-center">
+                        <img src="https://img.icons8.com/external-tal-revivo-color-tal-revivo/64/external-chart-js-data-visualization-library-javascript-chart-examples-logo-color-tal-revivo.png" alt="Chart.js">
+                        <div class="space-y-0.5">
+                            <h4 class="font-bold text-xl text-secondary">Chart.js</h4>
+                            <p class="text-xs text-[#7E7E7E]">Chart.js adalah library JavaScript untuk membuat grafik responsif...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+                <!-- Marquee Baris Kedua (PHP Frameworks) -->
+                <div class="marquee-container overflow-hidden w-full mt-10">
+                    <div class="marquee flex animate-marquee-right">
+                        <!-- Card for Laravel -->
+                        <div class="marquee-item hover:scale-105 transition duration-300">
+                            <div class="card flex gap-3 px-7 py-6 bg-gradient-to-r from-red-200 to-pink-200 rounded-2xl shadow-md border border-white cursor-pointer hover:shadow-xl mr-8 items-center">
+                                <img src="https://img.icons8.com/ios-filled/64/laravel.png" alt="Laravel">
+                                <div class="space-y-0.5">
+                                    <h4 class="font-bold text-xl text-secondary">Laravel</h4>
+                                    <p class="text-xs text-[#7E7E7E]">Laravel adalah framework PHP yang populer untuk pengembangan aplikasi web...</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Card for Symfony -->
+                        <div class="marquee-item hover:scale-105 transition duration-300">
+                            <div class="card flex gap-3 px-7 py-6 bg-gradient-to-r from-gray-200 to-cool-gray-200 rounded-2xl shadow-md border border-white cursor-pointer hover:shadow-xl mr-8 items-center">
+                                <img src="https://img.icons8.com/color/64/symfony.png" alt="Symfony">
+                                <div class="space-y-0.5">
+                                    <h4 class="font-bold text-xl text-secondary">Symfony</h4>
+                                    <p class="text-xs text-[#7E7E7E]">Symfony adalah framework PHP yang modular dan fleksibel...</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Card for CodeIgniter -->
+                        <div class="marquee-item hover:scale-105 transition duration-300">
+                            <div class="card flex gap-3 px-7 py-6 bg-gradient-to-r from-green-200 to-teal-200 rounded-2xl shadow-md border border-white cursor-pointer hover:shadow-xl mr-8 items-center">
+                                <img src="https://img.icons8.com/ios-filled/64/codeigniter.png" alt="CodeIgniter">
+                                <div class="space-y-0.5">
+                                    <h4 class="font-bold text-xl text-secondary">CodeIgniter</h4>
+                                    <p class="text-xs text-[#7E7E7E]">CodeIgniter adalah framework PHP ringan untuk aplikasi cepat...</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Card for Zend Framework -->
+                        <div class="marquee-item hover:scale-105 transition duration-300">
+                            <div class="card flex gap-3 px-7 py-6 bg-gradient-to-r from-blue-200 to-indigo-200 rounded-2xl shadow-md border border-white cursor-pointer hover:shadow-xl mr-8 items-center">
+                                <img src="https://img.icons8.com/color/64/zend-framework.png" alt="Zend Framework">
+                                <div class="space-y-0.5">
+                                    <h4 class="font-bold text-xl text-secondary">Zend Framework</h4>
+                                    <p class="text-xs text-[#7E7E7E]">Zend adalah framework PHP modular untuk aplikasi enterprise...</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Card for Yii -->
+                        <div class="marquee-item hover:scale-105 transition duration-300">
+                            <div class="card flex gap-3 px-7 py-6 bg-gradient-to-r from-yellow-200 to-orange-200 rounded-2xl shadow-md border border-white cursor-pointer hover:shadow-xl mr-8 items-center">
+                                <img src="https://img.icons8.com/color/64/yii.png" alt="Yii">
+                                <div class="space-y-0.5">
+                                    <h4 class="font-bold text-xl text-secondary">Yii</h4>
+                                    <p class="text-xs text-[#7E7E7E]">Yii adalah framework PHP dengan performa tinggi...</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Card for Phalcon -->
+                        <div class="marquee-item hover:scale-105 transition duration-300">
+                            <div class="card flex gap-3 px-7 py-6 bg-gradient-to-r from-purple-200 to-indigo-200 rounded-2xl shadow-md border border-white cursor-pointer hover:shadow-xl mr-8 items-center">
+                                <img src="https://img.icons8.com/color/64/phalcon.png" alt="Phalcon">
+                                <div class="space-y-0.5">
+                                    <h4 class="font-bold text-xl text-secondary">Phalcon</h4>
+                                    <p class="text-xs text-[#7E7E7E]">Phalcon adalah framework PHP yang cepat dan efisien...</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Card for CakePHP -->
+                        <div class="marquee-item hover:scale-105 transition duration-300">
+                            <div class="card flex gap-3 px-7 py-6 bg-gradient-to-r from-pink-200 to-rose-200 rounded-2xl shadow-md border border-white cursor-pointer hover:shadow-xl mr-8 items-center">
+                                <img src="https://img.icons8.com/color/64/cakephp.png" alt="CakePHP">
+                                <div class="space-y-0.5">
+                                    <h4 class="font-bold text-xl text-secondary">CakePHP</h4>
+                                    <p class="text-xs text-[#7E7E7E]">CakePHP adalah framework PHP yang memudahkan pengembangan aplikasi...</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Card for Slim -->
+                        <div class="marquee-item hover:scale-105 transition duration-300">
+                            <div class="card flex gap-3 px-7 py-6 bg-gradient-to-r from-gray-200 to-cool-gray-200 rounded-2xl shadow-md border border-white cursor-pointer hover:shadow-xl mr-8 items-center">
+                                <img src="https://img.icons8.com/color/64/slim.png" alt="Slim">
+                                <div class="space-y-0.5">
+                                    <h4 class="font-bold text-xl text-secondary">Slim</h4>
+                                    <p class="text-xs text-[#7E7E7E]">Slim adalah framework PHP mikro yang fleksibel dan ringan...</p>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Card for FuelPHP -->
+                        <div class="marquee-item hover:scale-105 transition duration-300">
+                            <div class="card flex gap-3 px-7 py-6 bg-gradient-to-r from-yellow-200 to-orange-200 rounded-2xl shadow-md border border-white cursor-pointer hover:shadow-xl mr-8 items-center">
+                                <img src="https://img.icons8.com/ios-filled/64/fuelphp.png" alt="FuelPHP">
+                                <div class="space-y-0.5">
+                                    <h4 class="font-bold text-xl text-secondary">FuelPHP</h4>
+                                    <p class="text-xs text-[#7E7E7E]">FuelPHP adalah framework PHP yang mendukung arsitektur HMVC...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+            <!-- Blog Start -->
+            <div id="blog" class="pt-36 pb-32 bg-slate-100">
+                <div class="container mx-auto">
+                    <div class="w-full px-4">
+                        <div class="max-w-xl mx-auto text-center mb-16">
+                            <h4 class="font-semibold text-lg text-primary mb-2">Blog</h4>
+                            <h2 class="font-bold text-dark text-3xl mb-4 sm:text-4xl lg:text-5xl">Tulisan Terkini</h2>
+                            <p class="font-medium text-md text-second md:text-lg">
+                                Temukan artikel menarik tentang teknologi, pemrograman, dan pengembangan web yang kami buat secara berkala.
+                            </p>
+                        </div>
+                    </div>
+            
+                    <!-- Blog posts grid with 2 columns -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 px-4">
+                        <!-- Blog Post 1 -->
+                        <div class="blog-item bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5q5n1dcM6vFMeA3NfsxdRgbSZ8vr1L1rrfQ&s" alt="Blog Image 1" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="font-bold text-xl text-dark mb-2">Mengapa Laravel Begitu Populer?</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Laravel adalah salah satu framework PHP yang paling banyak digunakan. Apa yang membuatnya begitu disukai oleh para developer?
+                                </p>
+                                <a href="#" class="inline-block text-primary font-semibold hover:underline">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+            
+                        <!-- Blog Post 2 -->
+                        <div class="blog-item bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhhPX7_FQsINOOD2-ggSygC-mOni2BWJdklg&s" alt="Blog Image 2" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="font-bold text-xl text-dark mb-2">Tips Meningkatkan Produktivitas dalam Pemrograman</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Menjaga produktivitas sebagai developer bisa menjadi tantangan. Temukan beberapa tips untuk meningkatkan fokus dan efisiensi Anda.
+                                </p>
+                                <a href="#" class="inline-block text-primary font-semibold hover:underline">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+            
+                        <!-- Blog Post 3 -->
+                        <div class="blog-item bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJWJLOP9ddqB0BayJ7X-qlJ45ae584hsChoA&s" alt="Blog Image 3" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="font-bold text-xl text-dark mb-2">Mengenal Vue.js: Framework JavaScript Modern</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Vue.js menawarkan pendekatan modern dan fleksibel untuk membangun antarmuka web interaktif. Pelajari lebih dalam tentang framework ini.
+                                </p>
+                                <a href="#" class="inline-block text-primary font-semibold hover:underline">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+            
+                        <!-- Blog Post 4 -->
+                        <div class="blog-item bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition duration-300">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ3aniItEOAmAKxLzvtJkOy1rai1R2GYyrHUQ&s" alt="Blog Image 4" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="font-bold text-xl text-dark mb-2">10 Framework JavaScript yang Harus Anda Ketahui</h3>
+                                <p class="text-gray-600 mb-4">
+                                    Framework JavaScript terus berkembang. Lihat 10 framework yang wajib Anda pelajari untuk menjadi developer front-end yang handal.
+                                </p>
+                                <a href="#" class="inline-block text-primary font-semibold hover:underline">Baca Selengkapnya</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        <!-- Blog Stop -->
+         
+        <!-- Tombol Mengambang untuk Memutar Musik -->
+    <button id="playButton" class="floating-button rounded-full">
+        <i id="playIcon" class="fas fa-play icon"></i>
+    </button>
+    <audio id="audioPlayer" src="music/Something just like this.mp3"></audio>
+    <!-- EndPlay -->
+
+    <!-- Include Font Awesome -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-PkKzT1fFZmA4Fn1kOYY2+cM2I+kL6D6vOkI+6U8/2/8v+F2nTGpM5r2K5XbL8Fz04zH/GW4zDd8y8J5s3yRGQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="src/script.js"></script>
 </body>
 </html>
