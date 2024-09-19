@@ -56,29 +56,29 @@ playButton.addEventListener('click', function() {
     isPlaying = !isPlaying;
 });
 
-// Agar tombol kembali ke status play ketika musik selesai
-// audioPlayer.addEventListener('ended', function() {
-//     isPlaying = false;
-//     playIcon.classList.remove('fa-pause');
-//     playIcon.classList.add('fa-play'); // Kembali ke ikon play
-// });
+//Agar tombol kembali ke status play ketika musik selesai
+audioPlayer.addEventListener('ended', function() {
+    isPlaying = false;
+    playIcon.classList.remove('fa-pause');
+    playIcon.classList.add('fa-play'); // Kembali ke ikon play
+});
 
-// // Memastikan musik mulai secara otomatis jika pengguna mengizinkan
-// window.addEventListener('load', function() {
-//     Swal.fire({
-//         title: 'Apakah Anda ingin memutar musik?',
-//         icon: 'question',
-//         showCancelButton: true,
-//         confirmButtonText: 'Ya',
-//         cancelButtonText: 'Tidak'
-//     }).then((result) => {
-//         if (result.isConfirmed) {
-//             audioPlayer.play(); // Memutar musik jika pengguna memilih "Ya"
-//             playIcon.classList.remove('fa-play'); // Ganti ikon play
-//             playIcon.classList.add('fa-pause'); // Ganti ikon menjadi pause
-//             isPlaying = true; // Setel status ke "Playing"
-//         } else {
-//             console.log("Musik tidak diputar.");
-//         }
-//     });
-// });
+// Memastikan musik mulai secara otomatis jika pengguna mengizinkan
+window.addEventListener('load', function() {
+    Swal.fire({
+        title: 'Apakah Anda ingin memutar musik?',
+        icon: 'question',
+        showCancelButton: true,
+        confirmButtonText: 'Ya',
+        cancelButtonText: 'Tidak'
+    }).then((result) => {
+        if (result.isConfirmed) {
+            audioPlayer.play(); // Memutar musik jika pengguna memilih "Ya"
+            playIcon.classList.remove('fa-play'); // Ganti ikon play
+            playIcon.classList.add('fa-pause'); // Ganti ikon menjadi pause
+            isPlaying = true; // Setel status ke "Playing"
+        } else {
+            console.log("Musik tidak diputar.");
+        }
+    });
+});
